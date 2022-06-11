@@ -28,7 +28,9 @@
           <a href="/" class="logo link active">Web<span>Studio</span></a>
           <ul class="site-nav list">
             <li class="site-nav-list">
-              <a href="./index.html" class="link-nav link active">Студия</a>
+              <a href="./index.html" class="link-nav link active"
+                >Студия</a
+              >
             </li>
             <li class="site-nav-list">
               <a href="./portfolio.html" class="link-nav link active current"
@@ -46,13 +48,16 @@
               <a
                 href="mailto:info@devstudio.com"
                 class="auth-nav-link link active"
-                >info@devstudio.com</a
               >
+                <svg class="auth-nav-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com
+              </a>
             </li>
             <li class="auth-nav-list">
-              <a href="tel:+380961111111" class="auth-nav-link link active"
-                >+38 096 111 11 11</a
-              >
+              <a href="tel:+380961111111" class="auth-nav-link link active">
+                <svg class="auth-nav-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11
+              </a>
             </li>
           </ul>
         </div>
@@ -88,8 +93,8 @@
           </ul>
 
           <ul class="portfolio-list list">
-            <li>
-              <a href="" class="link active">
+            <li class="portfolio-link"> 
+              <a href="" class="portfolio-link link active">
                 <img
                   src="./images/portfolio1.jpeg"
                   alt="ноутбук"
@@ -103,7 +108,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-link">
               <a href="" class="link active">
                 <img
                   src="./images/portfolio2.jpeg"
@@ -120,7 +125,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-link">
               <a href="" class="link active">
                 <img
                   src="./images/portfolio3.jpeg"
@@ -135,7 +140,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-link">
               <a href="" class="link active">
                 <img
                   src="./images/portfolio4.jpeg"
@@ -150,7 +155,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-link">
               <a href="" class="link active">
                 <img
                   src="./images/portfolio5.jpeg"
@@ -165,7 +170,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-link">
               <a href="" class="link active">
                 <img
                   src="./images/portfolio6.jpeg"
@@ -180,7 +185,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-link">
               <a href="" class="link active">
                 <img
                   src="./images/portfolio7.jpeg"
@@ -195,7 +200,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-link">
               <a href="" class="link active">
                 <img
                   src="./images/portfolio8.jpeg"
@@ -210,7 +215,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-link">
               <a href="" class="link active">
                 <img
                   src="./images/portfolio9.jpeg"
@@ -231,21 +236,55 @@
     </main>
 
     <!-- Футер -->
-
     <footer class="footer">
       <div class="container">
-        <a href="/" class="footer-logo link active">Web<span>Studio</span></a>
-        <address class="footer-address">
-          г. Киев, пр-т Леси Украинки, 26
-        </address>
-        <address class="footer-web list">
-          <a href="mailto:info@devstudio.com" class="auth-nav-link link active"
-            >info@devstudio.com</a
-          >
-          <a href="tel:+380961111111" class="auth-nav-link link active"
-            >+38 096 111 11 11</a
-          >
-        </address>
+        <div class="footer-box-address">
+          <a href="/" class="footer-logo link active">Web<span>Studio</span></a>
+          <address class="footer-address">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
+          <address class="footer-web list">
+            <a
+              href="mailto:info@devstudio.com"
+              class="auth-nav-link link active"
+              >info@devstudio.com</a
+            >
+            <a href="tel:+380961111111" class="auth-nav-link link active"
+              >+38 096 111 11 11</a
+            >
+          </address>
+        </div>
+
+        <div class="footer-box-links">
+          <p class="footer-box-text">присоединяйтесь</p>
+          <ul class="footer-box-list list">
+            <li class="footer-box-icon">
+              <a href="" class="footer-soc-link">
+                <svg class="footer-soc-icon" width="20" height="20" >
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg></a>
+            </li>
+            <li class="footer-box-icon">
+              <a href="" class="footer-soc-link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg></a>
+            </li>
+            <li class="footer-box-icon">
+              <a href="" class="footer-soc-link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg></a>
+            </li>
+            <li class="footer-box-icon">
+              <a href="" class="footer-soc-link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

@@ -128,6 +128,11 @@ body {
 }
 
 .auth-nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.14;
+
   color: var(--secondary-text-color);
   fill: var(--secondary-text-colorç);
 }
@@ -217,6 +222,21 @@ body {
   display: flex;
 }
 
+.specifics-box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.specifics-card-icon {
+}
+
 .specifics-card:not(:first-child) {
   margin-left: 30px;
 }
@@ -281,12 +301,18 @@ body {
 }
 
 .team-item {
-  width: calc(100% / 4 -30px);
+  width: calc(100% / 4 - 30px);
+
   margin: 15px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-text {
   padding: 30px 0;
+  background-color: #ffffff;
 }
 
 .team-subtitle {
@@ -401,7 +427,7 @@ body {
   padding-bottom: 60px;
 }
 
-.footer>.container {
+.footer > .container {
   display: flex;
   justify-content: flex-start;
 }
@@ -440,7 +466,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .footer-box-links {
@@ -449,31 +474,29 @@ body {
   margin-left: 70px;
 }
 
+.footer-box-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 
-.footer-box-text { 
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
-
-margin-bottom: 20px;
-padding-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 .footer-box-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+}
 
 .footer-box-icon {
   display: block;
   width: 44px;
   height: 44px;
   margin-left: 10px;
- 
 }
 
 .footer-soc-link {
@@ -485,7 +508,6 @@ padding-top: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: #ffffff;
-  
 }
 
 .footer-box-icon:first-child {
@@ -523,6 +545,16 @@ padding-top: 10px;
   justify-content: center;
 
   margin-bottom: 50px;
+}
+
+.portfolio-link {
+ 
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .filter-items + .filter-items {
