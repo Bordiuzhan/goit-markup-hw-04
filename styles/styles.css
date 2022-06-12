@@ -44,7 +44,8 @@ body {
 }
 
 .active:hover,
-.active:active {
+.active:active,
+.active:focus {
   color: var(--accent-color);
 }
 
@@ -130,15 +131,17 @@ body {
 .auth-nav-link {
   display: flex;
   align-items: center;
+
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 
   color: var(--secondary-text-color);
-  fill: var(--secondary-text-colorç);
 }
 
 .auth-nav-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .auth-nav-link:hover,
@@ -149,6 +152,16 @@ body {
 
 .hero {
   background-color: #2f303a;
+  max-width: 1600px;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-content {
@@ -405,13 +418,13 @@ body {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 100%;
+  height: 100%;
 
   color: #afb1b8;
 }
 
 .client-icon {
-  width: 100%;
-  height: 100%;
   fill: currentColor;
 }
 
@@ -537,7 +550,8 @@ body {
 }
 
 .filter:hover,
-.filter:active {
+.filter:active,
+.filter:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
